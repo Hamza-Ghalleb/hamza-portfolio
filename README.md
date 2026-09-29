@@ -1,6 +1,6 @@
 # Hamza Ghalleb — Portfolio
 
-Live domain: https://ghallebhamza.com/
+Live domain: https://hamzaghalleb.com/
 
 ## Files
 - `index.html` — portfolio website

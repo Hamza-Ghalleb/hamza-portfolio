@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hamza Ghalleb — DevSecOps Software Engineering Analyst and Data Professional based in Málaga, Spain.">
+<meta name="author" content="Hamza Ghalleb">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ghallebhamza.com/">
+<meta property="og:title" content="Hamza Ghalleb | Software Engineering & Data">
+<meta property="og:description" content="DevSecOps Software Engineering Analyst and Data Professional based in Málaga, Spain.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ghallebhamza.com/">
+<meta name="theme-color" content="#08090b">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Hamza Ghalleb | Software Engineering & Data</title>
+<style>
+:root{--bg:#08090b;--surface:#101216;--surface2:#15171c;--text:#f5f5f5;--muted:#a2a7b0;--line:#252932;--accent:#8ab4ff;--max:1120px}
+html.light{--bg:#f6f7f9;--surface:#fff;--surface2:#f0f2f5;--text:#101318;--muted:#5f6672;--line:#dfe3e8;--accent:#245fd7}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.65;transition:background .25s,color .25s}
+a{color:inherit;text-decoration:none}.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(8,9,11,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
+html.light nav{background:rgba(246,247,249,.82);border-bottom-color:var(--line)}
+.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:-.035em;font-size:18px}.logo span{color:var(--accent)}
+.nav-links{display:flex;align-items:center;gap:25px;color:#b8bdc7;font-size:14px}.nav-links a{transition:.2s}.nav-links a:hover{color:var(--text)}
+.nav-controls{display:flex;align-items:center;gap:8px;margin-left:2px}.nav-btn{border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:999px;min-width:36px;height:32px;padding:0 10px;font-size:12px;font-weight:750;cursor:pointer}.nav-btn:hover{border-color:var(--accent)}
+.menu{display:none;background:none;border:0;color:var(--text);font-size:25px}
+section{padding:105px 0;border-bottom:1px solid var(--line)}
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:110px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:620px;height:620px;right:-220px;top:80px;background:radial-gradient(circle,rgba(106,153,255,.13),transparent 68%);pointer-events:none}
+.eyebrow,.kicker{color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.16em;font-weight:800}
+h1{font-size:clamp(48px,8vw,92px);line-height:.98;letter-spacing:-.065em;max-width:850px;margin-top:20px}h1 span{color:#9ba2ad}
+.lead{font-size:20px;color:var(--muted);max-width:720px;margin:30px 0 36px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:12px 19px;border:1px solid var(--line);border-radius:8px;font-size:14px;font-weight:700;transition:.2s}.btn.primary{background:#f4f4f4;color:#090a0c;border-color:#f4f4f4}.btn:hover{transform:translateY(-2px);border-color:var(--accent)}
+html.light .btn.primary{background:#101318;color:#fff;border-color:#101318}
+.hero-meta{display:flex;gap:35px;margin-top:65px;color:var(--muted);font-size:14px}.hero-meta strong{display:block;color:var(--text);font-size:16px;margin-bottom:3px}
+.section-head{display:flex;justify-content:space-between;gap:30px;margin-bottom:50px}.section-head h2{font-size:clamp(32px,5vw,52px);letter-spacing:-.05em;line-height:1.05;margin-top:8px}.section-intro{max-width:470px;color:var(--muted);font-size:16px}
+.timeline{border-left:1px solid #30343c;margin-left:9px}.job{position:relative;padding:0 0 52px 34px}.job:last-child{padding-bottom:0}.job:before{content:"";position:absolute;left:-5px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.job-top{display:flex;justify-content:space-between;gap:20px}.job h3{font-size:21px;letter-spacing:-.025em}.company{color:var(--accent);margin:3px 0 4px;font-weight:700}.date,.location{color:#777d87;font-size:13px}.location{margin-bottom:17px}.job ul{padding-left:18px;color:var(--muted);max-width:850px}.job li{margin:8px 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:25px;transition:.25s}.card:hover{transform:translateY(-4px);border-color:#3a414d}.card h3{font-size:18px;margin-bottom:8px}.card p{font-size:14px;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}.tag{font-size:12px;color:#c5cad3;border:1px solid #30343c;background:var(--surface2);padding:5px 9px;border-radius:999px}
+.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.skill-box{padding:23px;background:var(--surface);border:1px solid var(--line);border-radius:12px}.skill-box h3{font-size:16px;margin-bottom:12px}.skill-box p{color:var(--muted);font-size:14px}
+.edu{display:grid;grid-template-columns:1fr 180px;gap:25px;padding:25px 0;border-top:1px solid var(--line)}.edu h3{font-size:19px}.edu p{color:var(--muted);font-size:14px}.edu .year{text-align:right;color:#777d87;font-size:13px}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:70px}.about p{font-size:18px;color:var(--muted);margin-bottom:18px}.facts{display:grid;gap:10px}.fact{padding:16px 18px;border:1px solid var(--line);border-radius:9px;background:var(--surface);display:flex;justify-content:space-between;gap:15px}.fact span{color:var(--muted);font-size:13px}
+.contact-box{border:1px solid var(--line);background:linear-gradient(135deg,#11141a,#0b0c0f);border-radius:16px;padding:55px;text-align:center}.contact-box h2{font-size:clamp(34px,5vw,55px);letter-spacing:-.05em}.contact-box p{color:var(--muted);max-width:580px;margin:12px auto 28px}
+html.light .contact-box{background:linear-gradient(135deg,#fff,#f1f3f6)}
+footer{padding:30px 0;color:#6f747d;font-size:13px}.footer-inner{display:flex;justify-content:space-between}
+.reveal{opacity:0;transform:translateY(20px);transition:.7s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:800px){.nav-links{display:none;position:absolute;top:72px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);padding:18px 20px;flex-direction:column;align-items:flex-start;gap:14px}.nav-links.open{display:flex}.nav-controls{margin-left:0;margin-top:4px}.menu{display:block}.hero{min-height:auto;padding:155px 0 100px}.hero-meta{flex-wrap:wrap}.section-head,.about{display:grid;grid-template-columns:1fr;gap:20px}.grid,.skills-grid{grid-template-columns:1fr}.job-top{display:block}.date{margin-top:5px}.edu{grid-template-columns:1fr}.edu .year{text-align:left}.contact-box{padding:35px 22px}.footer-inner{display:block}.footer-inner span{display:block;margin-top:6px}}
+</style>
+</head>
+<body>
+<nav><div class="container nav-inner">
+<a class="logo" href="#home">Hamza Ghalleb<span>.</span></a>
+<button class="menu" aria-label="Open menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+<div class="nav-links">
+<a href="#experience" data-i18n="navExperience">Experience</a><a href="#skills" data-i18n="navSkills">Skills</a><a href="#projects" data-i18n="navProjects">Projects</a><a href="#education" data-i18n="navEducation">Education</a><a href="#about" data-i18n="navAbout">About</a><a href="#contact" data-i18n="navContact">Contact</a>
+<span class="nav-controls"><button class="nav-btn" id="themeToggle" aria-label="Toggle theme">☀︎</button><button class="nav-btn" id="langToggle" aria-label="Switch language">ES</button></span>
+</div></div></nav>
+
+<main>
+<section class="hero" id="home"><div class="container reveal">
+<div class="eyebrow" data-i18n="heroEyebrow">Software Engineering · Data · DevSecOps</div>
+<h1 data-i18n="heroTitle">Building reliable<br>systems<br><span>with data at the core.</span></h1>
+<p class="lead" data-i18n="heroLead">I'm Hamza Ghalleb, a DevSecOps Software Engineering Analyst and Data Professional based in Málaga, Spain, with experience in enterprise banking environments.</p>
+<div class="ctas"><a class="btn primary" href="#experience" data-i18n="heroCta">Explore my experience</a><a class="btn" href="#contact" data-i18n="getInTouch">Get in touch</a></div>
+<div class="hero-meta"><div><strong>Málaga, Spain</strong><span data-i18n="basedIn">Based in</span></div><div><strong data-i18n="industry">Banking & Technology</strong><span data-i18n="industryLabel">Industry</span></div><div><strong data-i18n="focus">Software · Data</strong><span data-i18n="focusLabel">Focus</span></div></div>
+</div></section>
+
+<section id="experience"><div class="container">
+<div class="section-head reveal"><div><div class="kicker">01 — <span data-i18n="experienceLabel">Experience</span></div><h2 data-i18n="experienceTitle">Where I've worked</h2></div><p class="section-intro" data-i18n="experienceIntro">Experience across software engineering, DevSecOps, data governance and data quality within enterprise banking environments.</p></div>
+<div class="timeline reveal">
+<article class="job"><div class="job-top"><div><h3 data-i18n="job1Title">DevSecOps Software Engineering Analyst</h3><div class="company">Santander Digital Services</div></div><div class="date">Apr 2025 — Present</div></div><div class="location" data-i18n="job1Location">Málaga, Spain · On-site</div><ul id="job1Bullets"></ul></article>
+<article class="job"><div class="job-top"><div><h3 data-i18n="job2Title">DevSecOps Software Engineering Analyst — External Consultant</h3><div class="company">Wimbee · <span data-i18n="externalAt">External assignment at Santander Bank</span></div></div><div class="date">May 2023 — Apr 2025</div></div><div class="location" data-i18n="job2Location">Tunis, Tunisia · On-site</div><ul id="job2Bullets"></ul></article>
+<article class="job"><div class="job-top"><div><h3 data-i18n="job3Title">Data Analyst Intern</h3><div class="company">SIGA</div></div><div class="date">Feb 2022 — Jul 2022</div></div><div class="location" data-i18n="job3Location">Tunis, Tunisia</div><ul id="job3Bullets"></ul></article>
+</div></div></section>
+
+<section id="skills"><div class="container"><div class="section-head reveal"><div><div class="kicker">02 — <span data-i18n="skillsLabel">Skills</span></div><h2 data-i18n="skillsTitle">What I work with</h2></div><p class="section-intro" data-i18n="skillsIntro">A combination of software engineering, cloud, data and analytical capabilities developed through enterprise projects.</p></div>
+<div class="skills-grid reveal">
+<div class="skill-box"><h3 data-i18n="skill1Title">Software Engineering & DevSecOps</h3><p data-i18n="skill1Text">Software engineering, DevSecOps, CI/CD, deployment workflows, application testing, troubleshooting, incident analysis and release validation.</p><div class="tags"><span class="tag">Git</span><span class="tag">CI/CD</span><span class="tag">Testing</span><span class="tag">Jira</span></div></div>
+<div class="skill-box"><h3 data-i18n="skill2Title">Data Engineering & Quality</h3><p data-i18n="skill2Text">SQL-based validation, Data Governance, Data Quality, data validation, quality rules, data incident analysis and remediation support.</p><div class="tags"><span class="tag">SQL</span><span class="tag">Spark</span><span class="tag">Hive</span><span class="tag">Data Quality</span></div></div>
+<div class="skill-box"><h3 data-i18n="skill3Title">Cloud & Platforms</h3><p data-i18n="skill3Text">Experience working with enterprise cloud and data platforms in banking technology environments.</p><div class="tags"><span class="tag">AWS</span><span class="tag">Cloudera</span><span class="tag">Databricks</span><span class="tag">S3</span></div></div>
+<div class="skill-box"><h3 data-i18n="skill4Title">Analytics</h3><p data-i18n="skill4Text">Business analysis, reporting, data exploration and dashboard development for turning data into actionable information.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Analytics</span><span class="tag">Business Analysis</span></div></div>
+</div></div></section>
+
+<section id="projects"><div class="container"><div class="section-head reveal"><div><div class="kicker">03 — <span data-i18n="projectsLabel">Projects</span></div><h2 data-i18n="projectsTitle">Selected work</h2></div><p class="section-intro" data-i18n="projectsIntro">Examples of the technical areas and enterprise capabilities I've worked with.</p></div>
+<div class="grid reveal">
+<article class="card"><h3 data-i18n="project1Title">Data Quality Platform</h3><p data-i18n="project1Text">Worked on quality controls, implementations and validation processes for banking data, including SQL-based rules and execution-result verification.</p><div class="tags"><span class="tag">SQL</span><span class="tag">Data Quality</span><span class="tag">Banking</span></div></article>
+<article class="card"><h3 data-i18n="project2Title">Data Governance & DaaS</h3><p data-i18n="project2Text">Worked with data governance concepts and Data as a Service workflows, including data extraction, subscriptions and execution processes.</p><div class="tags"><span class="tag">Data Governance</span><span class="tag">DaaS</span><span class="tag">Parquet</span></div></article>
+<article class="card"><h3 data-i18n="project3Title">Analytics & Reporting</h3><p data-i18n="project3Text">Developed analytical dashboards and measures to monitor data quality and operational results using Power BI and DAX.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Analytics</span></div></article>
+</div></div></section>
+
+<section id="education"><div class="container"><div class="section-head reveal"><div><div class="kicker">04 — <span data-i18n="educationLabel">Education</span></div><h2 data-i18n="educationTitle">Academic background</h2></div></div>
+<div class="reveal">
+<div class="edu"><div><h3 data-i18n="edu1">Professional Master in Business Analytics</h3><p>Esprit School of Business</p></div><div class="year">2022 — 2024</div></div>
+<div class="edu"><div><h3 data-i18n="edu2">Bachelor's Degree in Business Computing</h3><p>Esprit School of Business</p></div><div class="year">2019 — 2022</div></div>
+<div class="edu"><div><h3 data-i18n="edu3">Baccalauréat in Computer Science</h3><p>Lycée Mahmoud Messadi Nabeul</p></div><div class="year">2015 — 2019</div></div>
+</div></div></section>
+
+<section id="about"><div class="container"><div class="section-head reveal"><div><div class="kicker">05 — <span data-i18n="aboutLabel">About</span></div><h2 data-i18n="aboutTitle">A little about me</h2></div></div>
+<div class="about reveal"><div><p data-i18n="about1">I'm a technology professional working at the intersection of software engineering, DevSecOps and data.</p><p data-i18n="about2">My experience in enterprise banking has given me exposure to production environments, software delivery, data quality and governance, while developing a strong focus on technical problem solving and continuous improvement.</p><p data-i18n="about3">I enjoy understanding how systems work end-to-end and turning complex technical requirements into reliable solutions.</p></div>
+<div class="facts"><div class="fact"><span data-i18n="locationLabel">Location</span><strong>Málaga, Spain</strong></div><div class="fact"><span>English</span><strong>Professional</strong></div><div class="fact"><span>French</span><strong>Professional</strong></div><div class="fact"><span>Spanish</span><strong data-i18n="basic">Basic</strong></div><div class="fact"><span>Arabic</span><strong>Native</strong></div></div></div></div></section>
+
+<section id="contact"><div class="container reveal"><div class="contact-box"><div class="kicker">06 — <span data-i18n="contactLabel">Contact</span></div><h2 data-i18n="contactTitle">Let's connect.</h2><p data-i18n="contactText">Interested in working together or discussing a technology opportunity? Feel free to reach out.</p>
+<div class="ctas" style="justify-content:center">
+<a class="btn primary" href="mailto:hamzaghalleb4@gmail.com?subject=Professional%20Opportunity%20-%20Hamza%20Ghalleb" data-i18n="emailMe">Email me</a>
+<a class="btn" href="cv/Hamza_Ghalleb_CV.pdf" download data-i18n="downloadCv">Download CV</a>
+</div></div></div></section>
+</main>
+<footer><div class="container footer-inner"><span>© 2026 Hamza Ghalleb</span><span data-i18n="footer">Software Engineering · Data · DevSecOps</span></div></footer>
+
+<script>
+const T={
+en:{
+navExperience:"Experience",navSkills:"Skills",navProjects:"Projects",navEducation:"Education",navAbout:"About",navContact:"Contact",
+heroEyebrow:"Software Engineering · Data · DevSecOps",heroTitle:"Building reliable<br>systems<br><span>with data at the core.</span>",
+heroLead:"I'm Hamza Ghalleb, a DevSecOps Software Engineering Analyst and Data Professional based in Málaga, Spain, with experience in enterprise banking environments.",
+heroCta:"Explore my experience",getInTouch:"Get in touch",basedIn:"Based in",industry:"Banking & Technology",industryLabel:"Industry",focus:"Software · Data",focusLabel:"Focus",
+experienceLabel:"Experience",experienceTitle:"Where I've worked",experienceIntro:"Experience across software engineering, DevSecOps, data governance and data quality within enterprise banking environments.",
+job1Title:"DevSecOps Software Engineering Analyst",job1Location:"Málaga, Spain · On-site",job1:[
+"Contribute to the development, maintenance and continuous improvement of software engineering and DevSecOps processes within enterprise banking environments.",
+"Work on development and deployment workflows, supporting efficient and reliable software delivery across environments.",
+"Apply software engineering and DevSecOps practices to improve application quality, security, stability and operational efficiency.",
+"Perform technical analysis and troubleshooting of application and deployment issues, identifying root causes and implementing corrective solutions.",
+"Collaborate with cross-functional teams on incidents, testing, release management and deployment activities."
+],
+job2Title:"DevSecOps Software Engineering Analyst — External Consultant",externalAt:"External assignment at Santander Bank",job2Location:"Tunis, Tunisia · On-site",job2:[
+"Delivered software engineering and DevSecOps services as an external consultant embedded within Santander's technology environment.",
+"Worked alongside Santander technical teams on software engineering, application operations, testing and deployment activities.",
+"Contributed to development and deployment workflows, troubleshooting technical issues and improving engineering processes.",
+"Performed application testing and validation to ensure reliability and quality of delivered changes.",
+"Investigated technical incidents and collaborated with internal teams to identify root causes and implement solutions."
+],
+job3Title:"Data Analyst Intern",job3Location:"Tunis, Tunisia",job3:["Performed analytical and reporting tasks using business and operational datasets.","Assisted in extracting insights to support business decision-making processes."],
+skillsLabel:"Skills",skillsTitle:"What I work with",skillsIntro:"A combination of software engineering, cloud, data and analytical capabilities developed through enterprise projects.",
+skill1Title:"Software Engineering & DevSecOps",skill1Text:"Software engineering, DevSecOps, CI/CD, deployment workflows, application testing, troubleshooting, incident analysis and release validation.",
+skill2Title:"Data Engineering & Quality",skill2Text:"SQL-based validation, Data Governance, Data Quality, data validation, quality rules, data incident analysis and remediation support.",
+skill3Title:"Cloud & Platforms",skill3Text:"Experience working with enterprise cloud and data platforms in banking technology environments.",skill4Title:"Analytics",skill4Text:"Business analysis, reporting, data exploration and dashboard development for turning data into actionable information.",
+projectsLabel:"Projects",projectsTitle:"Selected work",projectsIntro:"Examples of the technical areas and enterprise capabilities I've worked with.",
+project1Title:"Data Quality Platform",project1Text:"Worked on quality controls, implementations and validation processes for banking data, including SQL-based rules and execution-result verification.",
+project2Title:"Data Governance & DaaS",project2Text:"Worked with data governance concepts and Data as a Service workflows, including data extraction, subscriptions and execution processes.",
+project3Title:"Analytics & Reporting",project3Text:"Developed analytical dashboards and measures to monitor data quality and operational results using Power BI and DAX.",
+educationLabel:"Education",educationTitle:"Academic background",edu1:"Professional Master in Business Analytics",edu2:"Bachelor's Degree in Business Computing",edu3:"Baccalauréat in Computer Science",
+aboutLabel:"About",aboutTitle:"A little about me",about1:"I'm a technology professional working at the intersection of software engineering, DevSecOps and data.",about2:"My experience in enterprise banking has given me exposure to production environments, software delivery, data quality and governance, while developing a strong focus on technical problem solving and continuous improvement.",about3:"I enjoy understanding how systems work end-to-end and turning complex technical requirements into reliable solutions.",locationLabel:"Location",basic:"Basic",
+contactLabel:"Contact",contactTitle:"Let's connect.",contactText:"Interested in working together or discussing a technology opportunity? Feel free to reach out.",emailMe:"Email me",downloadCv:"Download CV",footer:"Software Engineering · Data · DevSecOps"
+},
+es:{
+navExperience:"Experiencia",navSkills:"Habilidades",navProjects:"Proyectos",navEducation:"Formación",navAbout:"Sobre mí",navContact:"Contacto",
+heroEyebrow:"Ingeniería de Software · Datos · DevSecOps",heroTitle:"Construyendo sistemas<br>fiables<br><span>con los datos en el centro.</span>",
+heroLead:"Soy Hamza Ghalleb, Analista de Ingeniería de Software DevSecOps y profesional de datos, basado en Málaga, España, con experiencia en entornos bancarios empresariales.",
+heroCta:"Ver mi experiencia",getInTouch:"Contactar",basedIn:"Ubicación",industry:"Banca y Tecnología",industryLabel:"Sector",focus:"Software · Datos",focusLabel:"Enfoque",
+experienceLabel:"Experiencia",experienceTitle:"Mi experiencia",experienceIntro:"Experiencia en ingeniería de software, DevSecOps, gobierno del dato y calidad de datos dentro de entornos bancarios empresariales.",
+job1Title:"Analista de Ingeniería de Software DevSecOps",job1Location:"Málaga, España · Presencial",job1:[
+"Contribuyo al desarrollo, mantenimiento y mejora continua de procesos de ingeniería de software y DevSecOps en entornos bancarios empresariales.",
+"Trabajo en flujos de desarrollo y despliegue, apoyando una entrega de software eficiente y fiable entre entornos.",
+"Aplico prácticas de ingeniería de software y DevSecOps para mejorar la calidad, seguridad, estabilidad y eficiencia operativa de las aplicaciones.",
+"Realizo análisis técnico y resolución de incidencias en aplicaciones y despliegues, identificando causas raíz e implementando soluciones correctivas.",
+"Colaboro con equipos multidisciplinares en incidencias, pruebas, gestión de releases y despliegues."
+],
+job2Title:"Analista de Ingeniería de Software DevSecOps — Consultor externo",externalAt:"Asignación externa en Santander Bank",job2Location:"Túnez · Presencial",job2:[
+"Presté servicios de ingeniería de software y DevSecOps como consultor externo integrado en el entorno tecnológico de Santander.",
+"Trabajé junto a equipos técnicos de Santander en actividades de ingeniería de software, operaciones, pruebas y despliegue.",
+"Contribuí a los flujos de desarrollo y despliegue, resolviendo incidencias técnicas y mejorando procesos de ingeniería.",
+"Realicé pruebas y validaciones de aplicaciones para garantizar la fiabilidad y calidad de los cambios entregados.",
+"Investigué incidencias técnicas y colaboré con equipos internos para identificar causas raíz e implementar soluciones."
+],
+job3Title:"Prácticas de Analista de Datos",job3Location:"Túnez",job3:["Realicé tareas de análisis y reporting utilizando datos empresariales y operativos.","Ayudé a extraer información útil para apoyar procesos de toma de decisiones."],
+skillsLabel:"Habilidades",skillsTitle:"Tecnologías y capacidades",skillsIntro:"Una combinación de ingeniería de software, cloud, datos y análisis desarrollada mediante proyectos empresariales.",
+skill1Title:"Ingeniería de Software y DevSecOps",skill1Text:"Ingeniería de software, DevSecOps, CI/CD, flujos de despliegue, pruebas, troubleshooting, análisis de incidencias y validación de releases.",
+skill2Title:"Datos y Calidad",skill2Text:"Validación mediante SQL, Gobierno del Dato, Calidad de Datos, reglas de calidad, análisis de incidencias y apoyo a la remediación.",
+skill3Title:"Cloud y Plataformas",skill3Text:"Experiencia trabajando con plataformas cloud y de datos empresariales en entornos tecnológicos bancarios.",skill4Title:"Analítica",skill4Text:"Análisis de negocio, reporting, exploración de datos y desarrollo de dashboards para convertir datos en información útil.",
+projectsLabel:"Proyectos",projectsTitle:"Trabajo destacado",projectsIntro:"Ejemplos de las áreas técnicas y capacidades empresariales en las que he trabajado.",
+project1Title:"Plataforma de Calidad de Datos",project1Text:"Trabajé en controles de calidad, implementaciones y procesos de validación de datos bancarios, incluyendo reglas SQL y verificación de resultados.",
+project2Title:"Gobierno del Dato y DaaS",project2Text:"Trabajé con conceptos de Gobierno del Dato y procesos de Data as a Service, incluyendo extracciones, suscripciones y ejecuciones.",
+project3Title:"Analítica y Reporting",project3Text:"Desarrollé dashboards y medidas analíticas para monitorizar calidad de datos y resultados operativos mediante Power BI y DAX.",
+educationLabel:"Formación",educationTitle:"Formación académica",edu1:"Máster Profesional en Business Analytics",edu2:"Grado en Business Computing",edu3:"Bachillerato en Ciencias Informáticas",
+aboutLabel:"Sobre mí",aboutTitle:"Un poco sobre mí",about1:"Soy un profesional tecnológico que trabaja en la intersección entre ingeniería de software, DevSecOps y datos.",about2:"Mi experiencia en banca empresarial me ha permitido trabajar con entornos productivos, entrega de software, calidad y gobierno del dato, desarrollando un fuerte enfoque en resolución de problemas técnicos y mejora continua.",about3:"Me interesa comprender cómo funcionan los sistemas de extremo a extremo y convertir requisitos técnicos complejos en soluciones fiables.",locationLabel:"Ubicación",basic:"Básico",
+contactLabel:"Contacto",contactTitle:"Hablemos.",contactText:"¿Te interesa trabajar conmigo o hablar sobre una oportunidad tecnológica? No dudes en contactarme.",emailMe:"Envíame un email",downloadCv:"Descargar CV",footer:"Ingeniería de Software · Datos · DevSecOps"
+}};
+
+let lang=localStorage.getItem("lang")||"en";
+const $=s=>document.querySelector(s);
+function applyLang(){
+document.documentElement.lang=lang;
+document.querySelectorAll("[data-i18n]").forEach(e=>{let v=T[lang][e.dataset.i18n];if(v!==undefined)e.innerHTML=v});
+["job1","job2","job3"].forEach(k=>{let el=$("#"+k+"Bullets");el.innerHTML=T[lang][k].map(x=>"<li>"+x+"</li>").join("")});
+$("#langToggle").textContent=lang==="en"?"ES":"EN";localStorage.setItem("lang",lang)}
+$("#langToggle").onclick=()=>{lang=lang==="en"?"es":"en";applyLang()};
+function applyTheme(){
+let light=localStorage.getItem("theme")==="light";document.documentElement.classList.toggle("light",light);$("#themeToggle").textContent=light?"☾":"☀︎"}
+$("#themeToggle").onclick=()=>{localStorage.setItem("theme",document.documentElement.classList.contains("light")?"dark":"light");applyTheme()};
+applyLang();applyTheme();
+const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")}),{threshold:.08});
+document.querySelectorAll(".reveal").forEach(e=>observer.observe(e));
+document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>$(".nav-links").classList.remove("open")));
+</script>
+</body></html>
